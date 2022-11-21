@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
   <body>
     <h3>Selectors</h3>
     <h3 id="selector">selector with id</h3>
@@ -28,17 +27,22 @@
     <a id="google" href="https://www.google.com">Google</a>
 
     <script>
-      // body 태그 안에있는 모든 형제 태그 출력하기
-      let broders = document.querySelectorAll("body > *");
-      broders.forEach((element) => console.log(element));
+      let bodyTags = document.querySelectorAll("body > *");
+      console.log(`body내 모든 형제 출력: `);
+      bodyTags.forEach((element) => {
+        console.log(element);
+      });
 
-      // .list .item 각각 출력
-      let lists = document.querySelectorAll(".list");
-      lists.forEach(function (list) {
-        let items = list.querySelectorAll(".item");
-        items.forEach((element) => {
-          console.log(element);
-        });
+      console.log(`IT회사종류`);
+      let list = bodyTags[4].querySelectorAll(".list .item");
+      list.forEach((element) => {
+        console.log(element);
+      });
+
+      console.log(`과일종류`);
+      let items = bodyTags[5].querySelectorAll(".list .item");
+      items.forEach((element) => {
+        console.log(element);
       });
     </script>
   </body>

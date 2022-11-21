@@ -28,15 +28,18 @@
 
     <script>
       let body = document.querySelectorAll("body > *");
-      let list = document.querySelectorAll(".list");
-      let item = document.querySelectorAll(".item");
+      let companyItem = body[4].querySelectorAll(".list .item");
+      let fruitItem = body[5].querySelectorAll(".list .item");
+      console.log(`바디`);
       body.forEach((a) => {
         console.log(a);
       });
-      list.forEach((a) => {
+      console.log(`리스트 - 아이템(회사)`);
+      companyItem.forEach((a) => {
         console.log(a);
       });
-      item.forEach((a) => {
+      console.log(`리스트 - 아이템(과일)`);
+      fruitItem.forEach((a) => {
         console.log(a);
       });
       // for (let i = 0; i < list.length; i++) {
