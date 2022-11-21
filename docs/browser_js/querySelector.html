@@ -28,35 +28,30 @@
 
     <script>
       let body = document.querySelectorAll("body > *");
-      let companyItem = body[4].querySelectorAll(".list .item");
-      let fruitItem = body[5].querySelectorAll(".list .item");
+
       console.log(`바디`);
       body.forEach((a) => {
         console.log(a);
       });
-      console.log(`리스트 - 아이템(회사)`);
-      companyItem.forEach((a) => {
-        console.log(a);
+      let lists = document.querySelectorAll(".list");
+      lists.forEach(function (list) {
+        //리스트
+        console.log(list);
+        let items = list.querySelectorAll(".item");
+        items.forEach((item) => {
+          //아이템
+          console.log(item);
+        });
       });
-      console.log(`리스트 - 아이템(과일)`);
-      fruitItem.forEach((a) => {
-        console.log(a);
-      });
-      // for (let i = 0; i < list.length; i++) {
-      //   console.log(list[i]);
-      //   let item = document.querySelectorAll(".item");
-      //   for (let j = 0; j < list.length; j++) {
-      //     console.log(item[i]);
-      //   }
-      // }
 
-      //   for (let i = 0; i < list.length; i++) {
-      //     console.log(list[i]);
-      //     let item = document.querySelectorAll(".item");
-      //     item.forEach((a) => {
-      //       console.log(a);
-      //     });
-      //   }
+      //   console.log(`리스트 - 아이템(회사)`);
+      //   companyItem.forEach((a) => {
+      //     console.log(a);
+      //   });
+      //   console.log(`리스트 - 아이템(과일)`);
+      //   fruitItem.forEach((a) => {
+      //     console.log(a);
+      //   });
     </script>
   </body>
 </html>
