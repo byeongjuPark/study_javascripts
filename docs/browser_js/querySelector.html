@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Selectors</h3>
+    <h3 id="selector">selector with id</h3>
+
+    <p id="title">DOM</p>
+    <button id="btn">Click Me</button>
+    <ul class="list">
+      <li class="item">Apple</li>
+      <li class="item">Azue</li>
+      <li class="item">Samsung</li>
+      <li class="item">IBM</li>
+    </ul>
+    <ul class="list">
+      <li class="item">banana</li>
+      <li class="item">berry</li>
+      <li class="item">melon</li>
+    </ul>
+
+    <a id="google" href="https://www.google.com">Google</a>
+
+    <script>
+      let body = document.querySelectorAll("body > *");
+      let list = document.querySelectorAll(".list");
+      let item = document.querySelectorAll(".item");
+      body.forEach((a) => {
+        console.log(a);
+      });
+      list.forEach((a) => {
+        console.log(a);
+      });
+      item.forEach((a) => {
+        console.log(a);
+      });
+      // for (let i = 0; i < list.length; i++) {
+      //   console.log(list[i]);
+      //   let item = document.querySelectorAll(".item");
+      //   for (let j = 0; j < list.length; j++) {
+      //     console.log(item[i]);
+      //   }
+      // }
+
+      //   for (let i = 0; i < list.length; i++) {
+      //     console.log(list[i]);
+      //     let item = document.querySelectorAll(".item");
+      //     item.forEach((a) => {
+      //       console.log(a);
+      //     });
+      //   }
+    </script>
+  </body>
+</html>
