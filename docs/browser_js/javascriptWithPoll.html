@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+      <div id="question">
+        <div class="contents">
+          1. 교수는 수업 전 강의 목표를 명확히 제시하였습니까?
+        </div>
+      </div>
+
+      <div id="checkArea">
+        <div class="check">
+          <input
+            class="checkAnswer"
+            type="radio"
+            name="answer"
+            id="answer"
+            value="1"
+          />
+          <label class="answerLabel" for="answer"> (1)전혀 아니다. </label>
+        </div>
+        <div class="check">
+          <input
+            class="checkAnswer"
+            type="radio"
+            name="answer"
+            id="answer"
+            value="2"
+          />
+          <label class="answerLabel" for="answer"> (2)아니다. </label>
+        </div>
+        <div class="check">
+          <input
+            class="checkAnswer"
+            type="radio"
+            name="answer"
+            id="answer"
+            value="3"
+          />
+          <label class="answerLabel" for="answer"> (3)그렇다. </label>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="./js/javascriptWithPoll.js"></script>
+  </body>
+</html>
