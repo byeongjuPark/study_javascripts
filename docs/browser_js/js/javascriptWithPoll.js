@@ -117,7 +117,7 @@ function printAnswer(Anum) {
             id="answer"
             value="E${element2.order}"
           />
-          <label class="answerLabel" for="answer"> (${element2.order})${element2.example} </label>
+          <label class="answerLabel" for="answer"> (${element2.order}) ${element2.example} </label>
         </div>`;
         }
       });
