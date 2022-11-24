@@ -124,3 +124,5 @@ function printAnswer(Anum) {
     }
   });
 }
+
+//body.addEventListener("load", init(), false);
