@@ -1,0 +1,13 @@
+* {
+  padding: 0.5rem;
+}
+
+.container {
+  display: flex;
+}
+
+.button {
+  width: 0 auto;
+  color: white;
+  background-color: blue;
+}

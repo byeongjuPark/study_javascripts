@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Validation</title>
+  </head>
+  <!-- 입력된 이름의 값이 js 메모리상에 불러와짐. -->
+  <!-- name 속성으로 관계가 묶여있음.
+     js에서 document.forms[dad][son].value 처럼 값을 로드 -->
+  <!--  form > onsubmit'양식 제출 이벤트가 발생할 때의 동작을 지정한다 -->
+  <body>
+    <form
+      name="myForm"
+      action="./index.html"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <div>
+        *Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+      </div>
+      <div id="fnameErrorId"></div>
+    </form>
+    <hr />
+    <!-- name을 js에서 따로 설정하지 않았기 떄문에 크게 의미 없는 버튼... -->
+    <form
+      name="formPw"
+      action="./index.html"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <div>
+        *password: <input type="text" name="password" required />
+        <input type="submit" value="Submit" />
+      </div>
+      <div id="fnameErrorId"></div>
+    </form>
+    <!--  -->
+    <hr />
+    <div>
+      <div>Number between 1 and 10</div>
+      <div>
+        *Search: <input type="text" name="search" id="searchId" />
+        <button id="btnsearch">Search</button>
+      </div>
+      <div id="searchDescId"></div>
+    </div>
+
+    <script src="./js/form_validations_refer.js"></script>
+  </body>
+</html>
