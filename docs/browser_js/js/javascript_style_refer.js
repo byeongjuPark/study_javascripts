@@ -30,6 +30,8 @@ function hideEvent(event) {
 }
 
 function resetEvent(event) {
+  //removeEvent, hideEvent function이 실행되기 전에 실행시키면
+  //객체가 만들어지지 않아서 참조 오류가 뜸.
   //none -> block
   removeDiv.style.display = "block";
   //hidden -> visible
