@@ -1,0 +1,59 @@
+header {
+  font-size: 40px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  font-weight: bolder;
+}
+#inputTask {
+  width: 75%;
+  height: 50px;
+  background-color: white;
+  color: #000;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 25px;
+}
+#addBtn {
+  width: 20%;
+  height: 50px;
+  background-color: cornflowerblue;
+  color: #000;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.3em;
+  font-size: 25px;
+}
+#items li {
+  display: flex;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px;
+  font-size: 40px;
+  background-color: white;
+  color: #000;
+  align-items: center;
+}
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.like i {
+  color: orange;
+}
+.delete i {
+  color: red;
+}
+#items * {
+  display: flex;
+  justify-content: space-between;
+}
+
+li > span {
+  margin-right: 20px;
+}
+li > span > span {
+  margin-right: 10px;
+}
