@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <style>
+      p {
+        cursor: pointer;
+      }
+      .jbBox {
+        border: 1px solid #bcbcbc;
+        padding: 20px;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").click(function () {
+          $(this).toggleClass("jbBox");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor.</p>
+  </body>
+</html>

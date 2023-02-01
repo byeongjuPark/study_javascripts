@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <h3>Gets And Sets Content</h3>
+
+    <h3>Attributes</h3>
+    <div><a href="https://www.google.com/">google</a></div>
+    <button id="btn_attr">Set Attribute</button>
+    <script>
+        $(function () {
+            $('#btn_attr').click(function () {
+                $('a').attr('href', 'https://openai.com/');
+                $('a').text('OpenAI');
+            });
+        });
+    </script>
+
+
+    <h3>Set</h3>
+    <p id="set_para">This is <b>Paragraph</b> element</p>
+    <div>input field : <input type="text" id="ipt_value"> </div>
+
+    <button id="show_btn_html">Show Html</button>
+    <button id="show_btn_text">Show Text</button>
+    <button id="set_btn_value">Set Value</button>
+
+    <script>
+        $(function () {
+            // set with html
+            $("#show_btn_html").click(function () {
+                $('#set_para').html('<b>Hello World! with HTML</b>');
+            })
+            // set with text
+            $("#show_btn_text").click(function () {
+                $('#set_para').text('Hello World! with Text');
+            })
+            $("#set_btn_value").click(function () {
+                $('#ipt_value').val('Hello World with Value');
+            })
+        });
+    </script>
+</body>
+
+</html>
